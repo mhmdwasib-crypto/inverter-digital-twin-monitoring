@@ -10,11 +10,11 @@ The project compares monitored or simulated inverter signals with predicted heal
 - `Parameters_Inverter.m` — model parameters, operating cases and fault injections
 - `RUN_ONE_FAULT.m` — runs one selected fault scenario and prints the final diagnostic outputs
 - `assets/model_overview.png` — overview of the Simulink model
-- `docs/project-summary.md` — short technical summary and project boundaries
+- `project-summary.md` — short technical summary and project boundaries
 
 ## Model overview
 
-![Simulink model overview](assets/model_overview.png)
+![Simulink model overview](model_overview.png)
 
 ## Main features
 
