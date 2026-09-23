@@ -8,8 +8,10 @@ The project compares monitored or simulated inverter signals with predicted heal
 
 - `Inverter_Model.slx` — main Simulink digital-twin model
 - `Parameters_Inverter.m` — model parameters, operating cases and fault injections
-- `RUN_ONE_FAULT.m` — runs one selected fault scenario and prints the final diagnostic outputs
-- `assets/model_overview.png` — overview of the Simulink model
+- `RUN_ONE_FAULT.m` — runs an individual fault scenario and prints diagnostic outputs
+- `Final_IF_V5_Locked_Evaluation.m` — locked Isolation Forest training and final evaluation pipeline
+- `HealthyIFRaw_3hr_LoadV2.csv` — 3-hour healthy replay dataset used for Isolation Forest evaluation
+- `model_overview.png` — overview of the Simulink model
 - `project-summary.md` — short technical summary and project boundaries
 
 ## Model overview
@@ -76,7 +78,7 @@ The wider research also evaluated a 41-feature Isolation Forest framework. The r
 
 This is a research prototype, not an OEM-validated inverter model. Several converter, thermal and component parameters are engineering assumptions because full proprietary inverter data and field fault data were not available. The reported results are simulation-based and require calibration against real Smart SIP field data before practical deployment.
 
-The Isolation Forest development described in the dissertation is part of the research, but its standalone training/evaluation scripts are **not included in this repository package yet**. They should be added before claiming full end-to-end anomaly-detection reproducibility from this repo.
+The repository includes the locked Isolation Forest final-evaluation script and the healthy replay dataset required by it. The evaluation uses a fixed chronological train/calibration/development/final-test split and evaluates the locked configuration across five pre-declared random seeds.
 
 ## Author
 
