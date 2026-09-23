@@ -100,6 +100,18 @@ The two gradual-degradation targets achieved approximately 80.3% confirmed detec
 This is a research prototype, not an OEM-validated inverter model. Several converter, thermal and component parameters are engineering assumptions because full proprietary inverter data and field fault data were not available. The reported results are simulation-based and require calibration against real Smart SIP field data before practical deployment.
 
 The repository includes the locked Isolation Forest final-evaluation script and the healthy replay dataset required by it. The evaluation uses a fixed chronological train/calibration/development/final-test split and evaluates the locked configuration across five pre-declared random seeds.
+## Limitations
+
+- The current implementation uses replayed operational data rather than live inverter communication.
+- Fault scenarios are simulation-based and injected for diagnostic evaluation.
+- Real-time deployment would require sensor integration and communication interfaces.
+
+## Future Work
+
+- Real-time SCADA/IoT data acquisition
+- Automated remaining useful life estimation
+- Cloud-based monitoring dashboard
+- Hardware-in-the-loop validation
 
 ## Author
 
