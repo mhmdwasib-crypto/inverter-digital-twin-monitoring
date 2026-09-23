@@ -73,6 +73,27 @@ At the settled operating point:
 - Calculated efficiency: ~96.9%
 
 The wider research also evaluated a 41-feature Isolation Forest framework. The reported final configuration achieved a mean confirmed detection rate of 89.41% for the evaluated gradual-degradation scenarios with 0% confirmed false alarms on the healthy holdout set. A simulated 30 V voltage drift was detected at about 72 s in the reported experiment.
+## Isolation Forest results
+
+The locked Isolation Forest was evaluated across five predefined seeds using a 99th-percentile healthy calibration threshold and 3-of-5 persistence.
+
+The two gradual-degradation targets achieved approximately 80.3% confirmed detection for capacitor degradation and 98.5% for voltage sensor drift, giving a mean confirmed detection rate of 89.41%. The held-out healthy data produced 0% confirmed false alarms after persistence was applied.
+
+### Final detection across evaluated scenarios
+
+![Final locked Isolation Forest detection rate](if_detection_rate.png)
+
+### Gradual degradation detection
+
+![Gradual degradation detection](if_gradual_detection.png)
+
+### Voltage drift anomaly score
+
+![Voltage drift Isolation Forest score](if_voltage_drift_timeline.png)
+
+### Capacitor degradation anomaly score
+
+![Capacitor degradation Isolation Forest score](if_capacitor_degradation_timeline.png)
 
 ## Important project boundary
 
