@@ -16,7 +16,7 @@ The project compares monitored or simulated inverter signals with predicted heal
 
 ## Model overview
 
-![Simulink model overview](model_overview.png)
+![Simulink model overview](inverter_digital_twin_model.png)
 
 ## Main features
 
