@@ -121,25 +121,25 @@ The evaluated gradual degradation scenarios achieved:
 
 # Detection Performance
 
-![Detection Rate](if_detection_rate.png)
+![Detection Rate](images/if_detection_rate.png)
 
 ---
 
 # Gradual Degradation Detection
 
-![Gradual Detection](if_gradual_detection.png)
+![Gradual Detection](images/if_gradual_detection.png)
 
 ---
 
 # Voltage Drift Detection
 
-![Voltage Drift](if_voltage_drift_timeline.png)
+![Voltage Drift](images/if_voltage_drift_timeline.png)
 
 ---
 
 # Capacitor Degradation Detection
 
-![Capacitor Degradation](if_capacitor_degradation_timeline.png)
+![Capacitor Degradation](images/if_capacitor_degradation_timeline.png)
 
 ---
 
