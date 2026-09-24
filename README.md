@@ -26,7 +26,7 @@ The project compares monitored or simulated inverter behaviour against predicted
 
 The Simulink model integrates inverter operation, thermal behaviour, fault injection, residual monitoring and diagnostic logic.
 
-![Digital Twin Model](images/model_overview.png)
+![Digital Twin Model](images/inverter_digital_twin_model.png)
 
 ---
 
